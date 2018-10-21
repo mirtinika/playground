@@ -21,10 +21,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "devDependencies": {
-    "@rise-digital/eslint-config-rise": "^2.2.1",
-    "eslint": "^5.7.0",
-    "prettier": "^1.14.3"
-  }
+  ]
 }
