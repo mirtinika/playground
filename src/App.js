@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Cube from './components/Cube'
+import Parallax from './components/Parallax'
 import './App.css'
 
 class App extends Component {
@@ -8,6 +9,9 @@ class App extends Component {
       <div className="App">
         <div className="container">
           <Cube />
+        </div>
+        <div>
+          <Parallax />
         </div>
       </div>
     )
