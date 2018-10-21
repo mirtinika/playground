@@ -2,22 +2,22 @@ import React from 'react'
 import './style.css'
 
 class Cube extends React.Component {
-  state={
-    rotateX:-10,
-    rotateY:-10,
-    rotateZ:0,
+  state = {
+    rotateX: -10,
+    rotateY: -10,
+    rotateZ: 0,
   }
-  onPressFlipRight = () => this.setState({rotateY:-90 + this.state.rotateY})
-  onPressFlipLeft = () => this.setState({rotateY:+90+ this.state.rotateY})
-  onPressFlipUp= () => this.setState({rotateX:+90 +this.state.rotateX})
-  onPressFlipDown= () => this.setState({rotateX:-90 +this.state.rotateX})
+  onPressFlipRight = () => this.setState({ rotateY: -90 + this.state.rotateY })
+  onPressFlipLeft = () => this.setState({ rotateY: +90 + this.state.rotateY })
+  onPressFlipUp = () => this.setState({ rotateX: +90 + this.state.rotateX })
+  onPressFlipDown = () => this.setState({ rotateX: -90 + this.state.rotateX })
 
   render() {
-    const {rotateX, rotateY, rotateZ} = this.state
-    const styles = { 
-      transform: `rotateX(${rotateX}deg) rotateY(${rotateY}deg) rotateZ(${rotateZ}deg)` 
-  }
-  console.log(styles)
+    const { rotateX, rotateY, rotateZ } = this.state
+    const styles = {
+      transform: `rotateX(${rotateX}deg) rotateY(${rotateY}deg) rotateZ(${rotateZ}deg)`,
+    }
+    console.log(styles)
     return (
       <div>
         <div className="cube" style={styles}>
