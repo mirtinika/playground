@@ -24,6 +24,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "react-router-dom": "^4.3.1",
     "react-spring": "^5.9.2",
     "stylelint": "^9.6.0",
     "stylelint-no-unsupported-browser-features": "^3.0.2"
