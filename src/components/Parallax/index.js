@@ -43,6 +43,7 @@ class ParallaxComponent extends React.Component {
           <img
             src={url('satellite4')}
             style={{ width: '15%', marginLeft: '70%' }}
+            alt="Satellite"
           />
         </Parallax.Layer>
 
@@ -56,7 +57,8 @@ class ParallaxComponent extends React.Component {
             pointerEvents: 'none',
           }}
         >
-          <img src={url('earth')} style={{ width: '30%' }} />
+          <img src={url('earth')} style={{ width: '30%' }} 
+            alt="Earth"/>
         </Parallax.Layer>
       </Parallax>
     )
